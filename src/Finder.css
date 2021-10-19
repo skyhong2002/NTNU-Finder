@@ -1,0 +1,11 @@
+.Finder {
+    font-size: 1.2em;
+}
+
+.Finder input {
+    font-size: 1.4em;
+    background: var(--nord6);
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+}

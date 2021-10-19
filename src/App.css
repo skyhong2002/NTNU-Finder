@@ -1,0 +1,27 @@
+.App {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--nord6);
+    background: var(--nord0);
+}
+
+.GitHub {
+    width: 150px;
+    height: 50px;
+    top: 0;
+    right: 0;
+    position: fixed;
+    background: var(--nord1);
+    border-radius: 0 0 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.GitHub h1 {
+    margin: 0;
+}
