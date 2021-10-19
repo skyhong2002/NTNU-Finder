@@ -14,7 +14,7 @@ class Finder extends React.Component<any, any> {
     }
 
     getInfo() {
-        const id = this.state.value.trim().toUpperCase() as string;
+        const id = this.state.value.replace(/[^\d\w]/g, "").toUpperCase() as string;
         if (!id.match(/^\d{8}[a-zA-Z]$/)) return;
         // @ts-ignore
         const sys = data["學制"][id.substr(0, 1)] || "未知";
