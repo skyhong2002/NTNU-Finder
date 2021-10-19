@@ -1,0 +1,22 @@
+{
+    "name": "ntnu-finder",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "serve": "vite preview",
+        "format": "prettier --write \"src/**/*\""
+    },
+    "dependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "devDependencies": {
+        "@types/react": "^17.0.30",
+        "@types/react-dom": "^17.0.9",
+        "@vitejs/plugin-react": "^1.0.0",
+        "prettier": "^2.4.1",
+        "typescript": "^4.4.4",
+        "vite": "^2.6.10"
+    }
+}
