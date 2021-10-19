@@ -6,11 +6,13 @@ class Finder extends React.Component<any, any> {
     constructor(props: any) {
         super(props);
         this.handleChange = this.handleChange.bind(this);
-        this.state = { value: "41047029S" };
+        let hash = window.location.hash.substr(1).replace(/[^\d\w]/g, "").match(/^\d{8}[a-zA-Z]$/) ? window.location.hash.substr(1) : null;
+        this.state = { value: hash || "41047029S" };
     }
 
     handleChange(evt: ChangeEvent<HTMLInputElement>) {
         this.setState({ value: evt.target.value });
+        window.location.hash = evt.target.value;
     }
 
     getInfo() {
